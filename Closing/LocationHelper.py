@@ -1,6 +1,9 @@
 import cv2
 import Roots
 
+#이미지의 좌표를 탐색할 때 도와주는 프로그램입니다.
+
+
 # 마우스 클릭 이벤트 핸들러 함수
 def mouse_callback(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONDOWN:  # 왼쪽 마우스 버튼 클릭 시
