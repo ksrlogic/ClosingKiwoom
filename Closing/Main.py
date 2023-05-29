@@ -45,9 +45,9 @@ def cropper(imageOrigin, location):
     return cropped_image
 
 #이미지 저장 함수
-def saver(image, date, name):
+def saver( image, date, name):
     #이미지 생성 날짜 및 이름 저장
-    cv2.imwrite('../CapturedHero/20230527/{}_{}.png'.format(date,name), image)
+    cv2.imwrite('../CapturedHero/{}/{}_{}.png'.format(date,date,name), image)
     
 
 #메인
