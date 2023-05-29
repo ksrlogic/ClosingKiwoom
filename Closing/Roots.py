@@ -5,6 +5,7 @@
 
 
 import os
+import sys
 from datetime import date
 
 #오늘 날짜, YYYYMMDD 형식
@@ -37,6 +38,11 @@ def isItToday(filelist,date):
         if str(date) in str(file):
             
             return str(file)
+        
+    else:
+        print("오늘 날짜의 캡쳐가 없습니다. 다시 확인해주시기 바랍니다.")
+        
+        sys.exit()
 # 함수 실행
 
 image_root = isItToday(BmpList,today)

@@ -37,7 +37,7 @@ names = ["Index",
 #이미지 크롭 함수
 def cropper(imageOrigin, location):
     
-    
+    print(location)
     cropped_image = imageOrigin[location[0][0]: location[0][1],
                           location[1][0]: location[1][1]]
     
